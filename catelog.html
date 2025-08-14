@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glitch Tea Catalog</title>
+    <!-- Use a simple, clean font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* A light gray background */
+            padding: 1rem;
+            color: #4b5563;
+        }
+        .container {
+            max-width: 28rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        .header {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+        .header h1 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            line-height: 2.25rem;
+        }
+        .header p {
+            margin-top: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #d1d5db;
+            line-height: 1.75rem;
+        }
+        .product-list {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .product-card {
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+        .product-card img {
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product-card h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .product-card .price {
+            margin-top: 0.25rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #374151;
+        }
+        .product-card .description {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #374151;
+        }
+        .footer {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+            border-bottom-left-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
+        }
+        .footer a {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+        .footer p {
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="./logo.png" alt="Glitch Tea Logo" style="height: 150px;">
+            <p>Product Catalog</p>
+        </div>
+
+        <!-- Product Cards Container -->
+        <div class="product-list">
+            <!-- Product 1: Dark Roast Oolong Tea -->
+            <div class="product-card">
+                <img src="./darkRoast.jpeg" alt="Dark Roast Oolong Tea">
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex-grow: 1;">
+                        <h2>Dark Roast Oolong</h2>
+                        <p class="price">CA$166 / kg</p>
+                    </div>
+                </div>
+                <p class="description">
+                    Carefully roasted over charcoal, this Taiwanese Oolong balances soft smokiness with the tea’s natural floral top notes. It’s smooth, rounded, and finishes with a subtle, caramelized sweetness that lingers just right.
+                </p>
+            </div>
+
+            <!-- Product 2: Light Roast Oolong Tea -->
+            <div class="product-card">
+                <img src="./lightRoast.jpeg" alt="Light Roast Oolong Tea">
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex-grow: 1;">
+                        <h2>Light Roast Oolong</h2>
+                        <p class="price">CA$195 / kg</p>
+                    </div>
+                </div>
+                <p class="description">
+                    Smooth and light-bodied, this oolong powder delivers delicate floral notes with a soft, honey-like sweetness. Clean and balanced, it’s subtle on its own and makes a refined base for lattes or iced drinks.
+                </p>
+            </div>
+
+            <!-- Product 3: Jasmine Green Tea -->
+            <div class="product-card">
+                <img src="./jasmine.jpeg" alt="Jasmine Green Tea">
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex-grow: 1;">
+                        <h2>Jasmine Green Tea</h2>
+                        <p class="price">CA$166 / kg</p>
+                    </div>
+                </div>
+                <p class="description">
+                    Delicately scented with jasmine blossoms, this green tea offers a light, floral cup that’s clean, smooth, and refreshing. It’s ideal for lifting the palate — whether served hot, iced, or blended into drinks.
+                </p>
+            </div>
+
+            <!-- Product 4: Red Tea No 21 -->
+            <div class="product-card">
+                <img src="./ruby.jpeg" alt="Red Tea No 21">
+                <div style="display: flex; align-items: flex-start;">
+                    <div style="flex-grow: 1;">
+                        <h2>Ruby No. 21 <small style="font-size:12px;">(Black Tea)</small></h2> 
+                        <p class="price">CA$195 / kg</p>
+                    </div>
+                </div>
+                <p class="description">
+                    This rare black tea powder brings bold, focused flavour — with notes of tangerine, blackberry, and a touch of black pepper. Layered and complex, it finishes with a lingering citrus spice that adds depth to lattes or iced drinks.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <a href="mailto:hello@glitchtea.com">hello@glitchtea.com</a>
+            <p>© 2025, Glitch Tea</p>
+        </div>
+    </div>
+</body>
+</html>
